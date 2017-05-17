@@ -1,5 +1,5 @@
 # docker-gitpuller
-A docker container that clones a git repository and then periodically pulls updates.
+A docker container that clones a git repository over ssh, checks out a branch and then periodically pulls updates.
 by: m.demeijer@nerdalize.com
 
 ## Build the container
