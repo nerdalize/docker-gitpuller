@@ -41,7 +41,7 @@ ssh-keyscan ${REPO_DOMAIN} >> /root/.ssh/known_hosts
 dbg "entering update loop"
 while true
 do
-  if [ -d ${REPO_DIR_PATH} ]
+  if [ -d ${REPO_DIR_PATH}/.git ]
   then
     dbg "pull updates from ${REPO_URL} branch ${REPO_BRANCH_NAME} in ${REPO_DIR_PATH}"
     cd ${REPO_DIR_PATH};
