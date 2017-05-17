@@ -30,8 +30,8 @@ showvar REPO_BRANCH_NAME
 showvar WAIT_SECONDS
 
 dbg "setting ssh key for ${REPO_DOMAIN}"
-chmod 700 /root/.ssh/id_rsa
-chown root:root /root/.ssh/id_rsa
+#chmod 700 /root/.ssh/id_rsa
+#chown root:root /root/.ssh/id_rsa
 # add git server to known hosts to prevent interactive prompt
 #touch /root/.ssh/known_hosts
 #ssh-keyscan -t rsa ${REPO_DOMAIN} >> /root/.ssh/known_hosts
